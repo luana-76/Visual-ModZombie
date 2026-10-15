@@ -67,7 +67,7 @@ details.panel[open] > summary { margin-bottom: 10px; }
 .btns button { text-align: left; line-height: 1.2; }
 button:disabled { opacity: .45; cursor: not-allowed; }
 .transport { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 10px 0 0; }
-.transport .tempo { margin-left: auto; font-variant-numeric: tabular-nums; color: var(--muted); }
+.transport .tempo {font-variant-numeric: tabular-nums; color: var(--muted); }
 .status { margin: 10px 2px 0; display: grid; gap: 2px; font-size: 14px; }
 .status b { font-weight: 600; }
 .status span { color: var(--muted); }
@@ -90,9 +90,6 @@ button:disabled { opacity: .45; cursor: not-allowed; }
 <div class="wrap">
   <header>
     <h1>Prévia do HUD</h1>
-    <p>HUD pequeno no estilo DayZ e regras reais do datapack Zumbi Survival rodando segundo a segundo. Medidores com anel no canto inferior direito, condições como efeitos de poção e nenhum aviso na tela.</p>
-  </header>
-
   <div class="grid">
     <section aria-label="Tela do jogo">
       <div class="stage-box"><div class="stage"><canvas id="tela" width="960" height="540" role="img" aria-label="Prévia da tela do jogo com o HUD"></canvas>
@@ -108,7 +105,6 @@ button:disabled { opacity: .45; cursor: not-allowed; }
         <span class="tempo" id="tempo"></span>
       </div>
       <div class="status" id="status" aria-live="off"></div>
-      <p class="stage-note">Sede, fome, temperatura, infecção e radiação são quadradinhos pequenos com um anel que enche conforme piora (0 a 10 barras). Na temperatura o anel é azul no frio e vermelho no calor. Infecção e radiação só aparecem quando existem. Sangramento, perna quebrada e infecção também são efeitos de poção: aparecem no canto superior direito e, na tela do inventário (tecla E), com o nome e o tempo. Não há aviso na tela nem sinal quando a horda chega. O resource pack esconde só a barra de fome. Cenário, hotbar, XP e ícones dos efeitos são desenhos simples; sons e a regeneração natural de vida são aproximações. Isto não é o render do Minecraft.</p>
     </section>
 
     <aside aria-label="Controles">
